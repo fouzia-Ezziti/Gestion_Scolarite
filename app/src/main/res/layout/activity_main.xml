@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#63E4F9FB"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/gesNote"
+        android:layout_width="142dp"
+        android:layout_height="95dp"
+        android:text="Gestion des notes"
+        app:layout_constraintBottom_toTopOf="@+id/gesMod"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.828"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/gestFil"
+        android:layout_width="151dp"
+        android:layout_height="95dp"
+        android:text="Gestion des filières"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/gesMod"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.402" />
+
+    <Button
+        android:id="@+id/gesMod"
+        android:layout_width="140dp"
+        android:layout_height="95dp"
+        android:text="Gestion des modules"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.83"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.402" />
+
+    <Button
+        android:id="@+id/gesEtu"
+        android:layout_width="151dp"
+        android:layout_height="93dp"
+        android:text="Gestion des étudiants"
+        app:layout_constraintBottom_toTopOf="@+id/gestFil"
+        app:layout_constraintEnd_toStartOf="@+id/gesNote"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
